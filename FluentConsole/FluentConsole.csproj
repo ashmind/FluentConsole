@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\FluentConsole.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,6 +30,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\FluentConsole.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -44,6 +46,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Colors.Generated.tt</DependentUpon>
     </Compile>
+    <Compile Include="FluentConsole.Interfaces.cs" />
     <Compile Include="Internal\ColorScope.cs" />
     <Compile Include="FluentConsole.cs" />
     <Compile Include="Internal\MainSyntax.cs" />

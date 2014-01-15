@@ -16,7 +16,13 @@ partial class FluentConsole {
 <# 
        foreach (var color in colors) {
 #>
-         [NotNull] IAfterColorSyntax <#= color #> { get; }
+         /// <summary>
+         /// Sets foreground color to <see cref="ConsoleColor.<#= color #>" /> for future calls to <see cref="ITextSyntax"/>.Text and <see cref="ITextSyntax"/>.Line.
+         /// Only applies to calls made on instance it returns.
+         /// </summary>
+         [NotNull]
+         IAfterColorSyntax <#= color #> { get; }
+
 <#     
        } 
 #>
@@ -25,6 +31,10 @@ partial class FluentConsole {
 <#
     foreach (var color in colors) { 
 #>
+    /// <summary>
+    /// Sets foreground color to <see cref="ConsoleColor.<#= color #>" /> for future calls to <see cref="ITextSyntax"/>.Text and <see cref="ITextSyntax"/>.Line.
+    /// Only applies to calls made on instance it returns.
+    /// </summary>
     public static IAfterColorSyntax <#= color #> {
         get { return instance.<#= color #>; }
     }

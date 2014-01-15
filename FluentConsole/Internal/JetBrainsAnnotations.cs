@@ -150,7 +150,7 @@ namespace FluentConsoleInternal {
     /// </list>
     /// </examples>
     [AttributeUsage(AttributeTargets.Method, AllowMultiple = true, Inherited = true)]
-    public sealed class ContractAnnotationAttribute : Attribute {
+    internal sealed class ContractAnnotationAttribute : Attribute {
         public ContractAnnotationAttribute([NotNull] string fdt)
             : this(fdt, false) {
         }
@@ -175,7 +175,7 @@ namespace FluentConsoleInternal {
 
     /// <summary>
     /// Indicates that a method does not make any observable state changes.
-    /// The same as <see cref="System.Diagnostics.Contracts.PureAttribute"/>
+    /// The same as <c>System.Diagnostics.Contracts.PureAttribute</c>
     /// </summary>
     /// <example>
     /// <code>

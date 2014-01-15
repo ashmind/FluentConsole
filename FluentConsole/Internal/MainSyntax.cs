@@ -88,8 +88,8 @@ namespace FluentConsoleInternal {
             return new ColorScope(color, null);
         }
 
-        public TSyntax With<TSyntax>(Func<FluentConsole.IMainSyntax, TSyntax> selector) {
-            return selector(this);
+        public TSyntax With<TSyntax>(Func<FluentConsole.IMainSyntax, TSyntax> transform) {
+            return transform(this);
         }
     }
 }

@@ -5,6 +5,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("FluentConsole")]
+[assembly: AssemblyDescription(@"
+A fluent API that aims to simplify colorful console output.
+FluentConsole.White.Text(""Hello "").Green.Text(""world!"")")]
 [assembly: AssemblyCopyright("Copyright © Andrey Shchekin 2014")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
