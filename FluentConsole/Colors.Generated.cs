@@ -1,7 +1,7 @@
 ﻿
 
 using System;
-using FluentConsoleInternal;
+using JetBrains.Annotations;
 
 partial class FluentConsole {
     partial interface IMainSyntax {
@@ -123,6 +123,7 @@ partial class FluentConsole {
     /// Sets foreground color to <see cref="ConsoleColor.Black" /> for future calls to <see cref="ITextSyntax"/>.Text and <see cref="ITextSyntax"/>.Line.
     /// Only applies to calls made on instance it returns.
     /// </summary>
+    [NotNull]
     public static IAfterColorSyntax Black {
         get { return instance.Black; }
     }
@@ -131,6 +132,7 @@ partial class FluentConsole {
     /// Sets foreground color to <see cref="ConsoleColor.DarkBlue" /> for future calls to <see cref="ITextSyntax"/>.Text and <see cref="ITextSyntax"/>.Line.
     /// Only applies to calls made on instance it returns.
     /// </summary>
+    [NotNull]
     public static IAfterColorSyntax DarkBlue {
         get { return instance.DarkBlue; }
     }
@@ -139,6 +141,7 @@ partial class FluentConsole {
     /// Sets foreground color to <see cref="ConsoleColor.DarkGreen" /> for future calls to <see cref="ITextSyntax"/>.Text and <see cref="ITextSyntax"/>.Line.
     /// Only applies to calls made on instance it returns.
     /// </summary>
+    [NotNull]
     public static IAfterColorSyntax DarkGreen {
         get { return instance.DarkGreen; }
     }
@@ -147,6 +150,7 @@ partial class FluentConsole {
     /// Sets foreground color to <see cref="ConsoleColor.DarkCyan" /> for future calls to <see cref="ITextSyntax"/>.Text and <see cref="ITextSyntax"/>.Line.
     /// Only applies to calls made on instance it returns.
     /// </summary>
+    [NotNull]
     public static IAfterColorSyntax DarkCyan {
         get { return instance.DarkCyan; }
     }
@@ -155,6 +159,7 @@ partial class FluentConsole {
     /// Sets foreground color to <see cref="ConsoleColor.DarkRed" /> for future calls to <see cref="ITextSyntax"/>.Text and <see cref="ITextSyntax"/>.Line.
     /// Only applies to calls made on instance it returns.
     /// </summary>
+    [NotNull]
     public static IAfterColorSyntax DarkRed {
         get { return instance.DarkRed; }
     }
@@ -163,6 +168,7 @@ partial class FluentConsole {
     /// Sets foreground color to <see cref="ConsoleColor.DarkMagenta" /> for future calls to <see cref="ITextSyntax"/>.Text and <see cref="ITextSyntax"/>.Line.
     /// Only applies to calls made on instance it returns.
     /// </summary>
+    [NotNull]
     public static IAfterColorSyntax DarkMagenta {
         get { return instance.DarkMagenta; }
     }
@@ -171,6 +177,7 @@ partial class FluentConsole {
     /// Sets foreground color to <see cref="ConsoleColor.DarkYellow" /> for future calls to <see cref="ITextSyntax"/>.Text and <see cref="ITextSyntax"/>.Line.
     /// Only applies to calls made on instance it returns.
     /// </summary>
+    [NotNull]
     public static IAfterColorSyntax DarkYellow {
         get { return instance.DarkYellow; }
     }
@@ -179,6 +186,7 @@ partial class FluentConsole {
     /// Sets foreground color to <see cref="ConsoleColor.Gray" /> for future calls to <see cref="ITextSyntax"/>.Text and <see cref="ITextSyntax"/>.Line.
     /// Only applies to calls made on instance it returns.
     /// </summary>
+    [NotNull]
     public static IAfterColorSyntax Gray {
         get { return instance.Gray; }
     }
@@ -187,6 +195,7 @@ partial class FluentConsole {
     /// Sets foreground color to <see cref="ConsoleColor.DarkGray" /> for future calls to <see cref="ITextSyntax"/>.Text and <see cref="ITextSyntax"/>.Line.
     /// Only applies to calls made on instance it returns.
     /// </summary>
+    [NotNull]
     public static IAfterColorSyntax DarkGray {
         get { return instance.DarkGray; }
     }
@@ -195,6 +204,7 @@ partial class FluentConsole {
     /// Sets foreground color to <see cref="ConsoleColor.Blue" /> for future calls to <see cref="ITextSyntax"/>.Text and <see cref="ITextSyntax"/>.Line.
     /// Only applies to calls made on instance it returns.
     /// </summary>
+    [NotNull]
     public static IAfterColorSyntax Blue {
         get { return instance.Blue; }
     }
@@ -203,6 +213,7 @@ partial class FluentConsole {
     /// Sets foreground color to <see cref="ConsoleColor.Green" /> for future calls to <see cref="ITextSyntax"/>.Text and <see cref="ITextSyntax"/>.Line.
     /// Only applies to calls made on instance it returns.
     /// </summary>
+    [NotNull]
     public static IAfterColorSyntax Green {
         get { return instance.Green; }
     }
@@ -211,6 +222,7 @@ partial class FluentConsole {
     /// Sets foreground color to <see cref="ConsoleColor.Cyan" /> for future calls to <see cref="ITextSyntax"/>.Text and <see cref="ITextSyntax"/>.Line.
     /// Only applies to calls made on instance it returns.
     /// </summary>
+    [NotNull]
     public static IAfterColorSyntax Cyan {
         get { return instance.Cyan; }
     }
@@ -219,6 +231,7 @@ partial class FluentConsole {
     /// Sets foreground color to <see cref="ConsoleColor.Red" /> for future calls to <see cref="ITextSyntax"/>.Text and <see cref="ITextSyntax"/>.Line.
     /// Only applies to calls made on instance it returns.
     /// </summary>
+    [NotNull]
     public static IAfterColorSyntax Red {
         get { return instance.Red; }
     }
@@ -227,6 +240,7 @@ partial class FluentConsole {
     /// Sets foreground color to <see cref="ConsoleColor.Magenta" /> for future calls to <see cref="ITextSyntax"/>.Text and <see cref="ITextSyntax"/>.Line.
     /// Only applies to calls made on instance it returns.
     /// </summary>
+    [NotNull]
     public static IAfterColorSyntax Magenta {
         get { return instance.Magenta; }
     }
@@ -235,6 +249,7 @@ partial class FluentConsole {
     /// Sets foreground color to <see cref="ConsoleColor.Yellow" /> for future calls to <see cref="ITextSyntax"/>.Text and <see cref="ITextSyntax"/>.Line.
     /// Only applies to calls made on instance it returns.
     /// </summary>
+    [NotNull]
     public static IAfterColorSyntax Yellow {
         get { return instance.Yellow; }
     }
@@ -243,6 +258,7 @@ partial class FluentConsole {
     /// Sets foreground color to <see cref="ConsoleColor.White" /> for future calls to <see cref="ITextSyntax"/>.Text and <see cref="ITextSyntax"/>.Line.
     /// Only applies to calls made on instance it returns.
     /// </summary>
+    [NotNull]
     public static IAfterColorSyntax White {
         get { return instance.White; }
     }

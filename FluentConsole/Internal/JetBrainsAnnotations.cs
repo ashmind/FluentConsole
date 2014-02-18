@@ -17,7 +17,7 @@
 using System;
 
 // ReSharper disable CheckNamespace
-namespace FluentConsoleInternal {
+namespace JetBrains.Annotations {
 // ReSharper restore CheckNamespace
     /// <summary>
     /// Indicates that the marked method builds string by format pattern and (optional) arguments. 

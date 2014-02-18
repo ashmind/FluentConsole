@@ -9,7 +9,7 @@
 <# var colors = Enum.GetNames(typeof(ConsoleColor)); #>
 
 using System;
-using FluentConsoleInternal;
+using JetBrains.Annotations;
 
 partial class FluentConsole {
     partial interface IMainSyntax {
@@ -35,6 +35,7 @@ partial class FluentConsole {
     /// Sets foreground color to <see cref="ConsoleColor.<#= color #>" /> for future calls to <see cref="ITextSyntax"/>.Text and <see cref="ITextSyntax"/>.Line.
     /// Only applies to calls made on instance it returns.
     /// </summary>
+    [NotNull]
     public static IAfterColorSyntax <#= color #> {
         get { return instance.<#= color #>; }
     }

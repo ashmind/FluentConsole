@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using FluentConsoleInternal;
+using JetBrains.Annotations;
 
 // ReSharper disable CheckNamespace
 // ReSharper disable MethodOverloadWithOptionalParameter

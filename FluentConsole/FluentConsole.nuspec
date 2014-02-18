@@ -8,7 +8,7 @@
     <projectUrl>https://github.com/ashmind/FluentConsole</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Removed unnecessary ReSharper attributes from public API.</releaseNotes>
+    <releaseNotes>Added missing ReSharper annotations.</releaseNotes>
     <tags>console</tags>
   </metadata>
 </package>
