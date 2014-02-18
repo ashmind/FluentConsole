@@ -68,7 +68,7 @@ namespace FluentConsoleInternal {
     /// </code>
     /// </example>
     [AttributeUsage(AttributeTargets.Parameter, AllowMultiple = false, Inherited = true)]
-    public sealed class InvokerParameterNameAttribute : Attribute { }
+    internal sealed class InvokerParameterNameAttribute : Attribute { }
 
     /// <summary>
     /// Indicates that the value of the marked element could be <c>null</c> sometimes, 
@@ -90,7 +90,7 @@ namespace FluentConsoleInternal {
     /// </code>
     /// </example>
     [AttributeUsage(AttributeTargets.Method | AttributeTargets.Parameter | AttributeTargets.Property | AttributeTargets.Delegate | AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
-    public sealed class CanBeNullAttribute : Attribute { }
+    internal sealed class CanBeNullAttribute : Attribute { }
 
     /// <summary>
     /// Indicates that the value of the marked element could never be <c>null</c>
@@ -105,7 +105,7 @@ namespace FluentConsoleInternal {
     /// </code>
     /// </example>
     [AttributeUsage(AttributeTargets.Method | AttributeTargets.Parameter | AttributeTargets.Property | AttributeTargets.Delegate | AttributeTargets.Field, AllowMultiple = false, Inherited = true)]
-    public sealed class NotNullAttribute : Attribute { }
+    internal sealed class NotNullAttribute : Attribute { }
 
     /// <summary>
     /// Describes dependency between method input and output.
@@ -170,7 +170,7 @@ namespace FluentConsoleInternal {
     /// If the parameter is an enumerable, indicates that it is enumerated while the method is executed.
     /// </summary>
     [AttributeUsage(AttributeTargets.Parameter, Inherited = true)]
-    public sealed class InstantHandleAttribute : Attribute { }
+    internal sealed class InstantHandleAttribute : Attribute { }
 
 
     /// <summary>
@@ -193,5 +193,5 @@ namespace FluentConsoleInternal {
     /// </code>
     /// </example>
     [AttributeUsage(AttributeTargets.Method, Inherited = true)]
-    public sealed class PureAttribute : Attribute { }
+    internal sealed class PureAttribute : Attribute { }
 }
