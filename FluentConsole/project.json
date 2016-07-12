@@ -1,15 +1,23 @@
 ﻿{
-    "version": "0.8.4-netstandard-pre-160712",
+    "version": "0.8.4-netstandard-160712",
     "description": "A fluent API that aims to simplify colorful console output.\r\nFluentConsole.White.Text(\\u0022Hello\\u0022).Green.Text(\\u0022world!\\u0022)",
-    "authors": ["Andrey Shchekin"],
+    "authors": [ "Andrey Shchekin" ],
+    "packOptions": {
+        "tags": ["console"],
+        "projectUrl": "https://github.com/ashmind/FluentConsole",
+        "repository": {
+            "type": "git",
+            "url": "https://github.com/ashmind/FluentConsole.git"
+        }
+    },
 
     "frameworks": {
-        "net20": {},
-        "net35": {}, 
+        "net20": { },
+        "net35": { },
         "netstandard1.3": {
             "dependencies": {
                 "System.Runtime": "4.1.0",
-                "System.Console": "4.0.0" 
+                "System.Console": "4.0.0"
             }
         }
     }
