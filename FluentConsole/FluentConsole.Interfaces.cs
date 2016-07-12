@@ -25,11 +25,13 @@ partial class FluentConsole {
         [NotNull]
         IAfterColorSyntax Color(ConsoleColor color);
 
+        #if !NET20
         /// <summary>
         /// Applies <paramref name="transform" /> to the current instance and returns its result.
         /// May be useful to set the color conditionally, for example.
         /// </summary>
         TSyntax With<TSyntax>([NotNull, InstantHandle] Func<IMainSyntax, TSyntax> transform);
+        #endif
     }
 
     /// <summary>

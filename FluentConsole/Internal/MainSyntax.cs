@@ -89,8 +89,10 @@ namespace FluentConsoleInternal {
             return new ColorScope(color, null);
         }
 
+        #if !NET20
         public TSyntax With<TSyntax>(Func<FluentConsole.IMainSyntax, TSyntax> transform) {
             return transform(this);
         }
+        #endif
     }
 }

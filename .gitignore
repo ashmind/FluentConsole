@@ -1,9 +1,10 @@
 
+.vs/
 bin/
 obj/
+\#packages/
 *.suo
 *.user
 *.snk
 *.nupkg
-\#packages/
-_ReSharper.*
+*.lock.json

@@ -88,6 +88,7 @@ public static partial class FluentConsole {
         return instance.Color(color);
     }
 
+    #if !NET20
     /// <summary>
     /// Applies <paramref name="transform" /> to <see cref="Instance"/> and returns its result.
     /// May be useful to set the color conditionally, for example.
@@ -95,4 +96,5 @@ public static partial class FluentConsole {
     public static TSyntax With<TSyntax>([NotNull, InstantHandle] Func<IMainSyntax, TSyntax> transform) {
         return transform(Instance);
     }
+    #endif
 }
