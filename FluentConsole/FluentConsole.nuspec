@@ -6,6 +6,7 @@
     <title>$title$</title>
     <authors>Andrey Shchekin</authors>
     <projectUrl>https://github.com/ashmind/FluentConsole</projectUrl>
+    <licenseUrl>https://github.com/ashmind/FluentConsole/blob/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>Added missing ReSharper annotations.</releaseNotes>
