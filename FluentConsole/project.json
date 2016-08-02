@@ -3,7 +3,8 @@
     "description": "A fluent API that aims to simplify colorful console output.\r\nFluentConsole.White.Text(\\u0022Hello\\u0022).Green.Text(\\u0022world!\\u0022)",
     "authors": [ "Andrey Shchekin" ],
     "packOptions": {
-        "tags": ["console"],
+        "tags": [ "console" ],
+        "licenseUrl": "https://github.com/ashmind/FluentConsole/blob/master/LICENSE.txt",
         "projectUrl": "https://github.com/ashmind/FluentConsole",
         "repository": {
             "type": "git",
