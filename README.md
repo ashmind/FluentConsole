@@ -3,11 +3,11 @@
 ### Static
 
     FluentConsole
-		.White.Background
+	    .White.Background
         .Green.Line("Hello there!");
     
     FluentConsole
-		.White.Text("Fluent")
+	    .White.Text("Fluent")
         .Red.Text("Console");
 
 ### Instance
@@ -22,7 +22,7 @@
 #### Conditional
 
     FluentConsole
-		.White.Text("Result: ")
+	    .White.Text("Result: ")
         .With(c => result.IsSuccess ? c.Green : c.Red)
         .Line(result.Code)
 
