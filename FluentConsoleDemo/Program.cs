@@ -6,7 +6,7 @@ namespace FluentConsoleDemo {
     public class Program {
         public static void Main(string[] args) {
             FluentConsole
-                .White.Background.Black.Line("Black");
+                .White.Background.Black.Line("Green");
             
             FluentConsole
                 .Cyan.Line("Cyan")
